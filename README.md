@@ -4,6 +4,18 @@ App tipo Moovit/Google Maps enfocada solo en Lima Metropolitana y Callao.
 Motor de rutas propio (no depende de Google Maps API ni de servicios de pago),
 corriendo 100% en tu máquina.
 
+## Galería
+
+<table>
+<tr>
+<td align="center" valign="top"><img src="docs/screenshots/01-mapa-lima.png" alt="Mapa de Lima y formulario de ruta" width="360"><br><sub>Mapa de Lima y formulario de ruta</sub></td>
+<td align="center" valign="top"><img src="docs/screenshots/02-origen.png" alt="Selección del punto de partida" width="360"><br><sub>Selección del punto de partida</sub></td>
+</tr>
+<tr>
+<td align="center" valign="top"><img src="docs/screenshots/03-destino.png" alt="Selección del destino" width="360"><br><sub>Selección del destino</sub></td>
+</tr>
+</table>
+
 ## Qué hace
 
 - Buscas una dirección de origen y una de destino (autocompletado real vía OSM).
