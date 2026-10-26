@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Cómo Llegar — Lima y Callao</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app">
+    <aside id="panel">
+      <header>
+        <h1>🚌 Cómo Llegar</h1>
+        <p class="subtitle">Transporte público — Lima y Callao</p>
+      </header>
+
+      <form id="search-form">
+        <div class="field">
+          <label for="from-input">Desde</label>
+          <input id="from-input" type="text" placeholder="Escribe una dirección o lugar" autocomplete="off" />
+          <div id="from-suggestions" class="suggestions"></div>
+        </div>
+
+        <button type="button" id="swap-btn" title="Intercambiar">⇅</button>
+
+        <div class="field">
+          <label for="to-input">Hacia</label>
+          <input id="to-input" type="text" placeholder="Escribe una dirección o lugar" autocomplete="off" />
+          <div id="to-suggestions" class="suggestions"></div>
+        </div>
+
+        <div class="field">
+          <label for="time-input">Hora de salida</label>
+          <input id="time-input" type="datetime-local" />
+        </div>
+
+        <button type="submit" id="plan-btn">Buscar ruta</button>
+      </form>
+
+      <div id="status"></div>
+      <div id="results"></div>
+    </aside>
+
+    <main id="map"></main>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
